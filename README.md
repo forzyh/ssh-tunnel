@@ -2,6 +2,8 @@
 
 Lightweight SSH port forwarder — no dependency on system `ssh`, pure Go binary.
 
+[中文文档](README_zh.md)
+
 ## Quick Install
 
 ```bash
