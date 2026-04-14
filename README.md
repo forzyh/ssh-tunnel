@@ -10,7 +10,18 @@ Lightweight SSH port forwarder — no dependency on system `ssh`, pure Go binary
 go install github.com/forzyh/ssh-tunnel@latest
 ```
 
-Requires [Go](https://go.dev/) 1.19+. The binary will be placed in your `$GOPATH/bin` (or `$HOME/go/bin`).
+Requires [Go](https://go.dev/) 1.19+. The binary will be placed in `$HOME/go/bin`.
+
+### Make sure `ssh-tunnel` is in your PATH
+
+If `ssh-tunnel` is not found after install, add `$HOME/go/bin` to your shell:
+
+```bash
+# One-liner: add to your shell config and apply immediately
+echo 'export PATH="$HOME/go/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+# For bash users:
+# echo 'export PATH="$HOME/go/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
+```
 
 ## Usage
 

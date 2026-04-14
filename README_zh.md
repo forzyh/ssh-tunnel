@@ -10,7 +10,18 @@
 go install github.com/forzyh/ssh-tunnel@latest
 ```
 
-需要安装 [Go](https://go.dev/) 1.19+。二进制文件会安装到 `$GOPATH/bin`（或 `$HOME/go/bin`）。
+需要安装 [Go](https://go.dev/) 1.19+。二进制文件会安装到 `$HOME/go/bin`。
+
+### 确保 `ssh-tunnel` 在 PATH 中
+
+如果安装后提示 `command not found`，将 `$HOME/go/bin` 加入 shell 配置即可：
+
+```bash
+# 一键命令：写入配置并立即生效
+echo 'export PATH="$HOME/go/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+# bash 用户：
+# echo 'export PATH="$HOME/go/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
+```
 
 ## 使用方式
 
