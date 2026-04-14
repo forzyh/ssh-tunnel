@@ -1,0 +1,12 @@
+{
+  "ssh_addr": "jump.example.com:22",
+  "user": "your-username",
+  "password": "",
+  "keep_alive": 30,
+  "forwards": [
+    {
+      "local_addr": "127.0.0.1:3306",
+      "remote_addr": "192.168.1.100:3306"
+    }
+  ]
+}

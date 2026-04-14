@@ -1,0 +1,10 @@
+# Build output
+ssh-tunnel
+ssh-tunnel.exe
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
