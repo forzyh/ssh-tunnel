@@ -1,4 +1,4 @@
-module ssh-tunnel
+module github.com/forzyh/ssh-tunnel
 
 go 1.25.0
 
